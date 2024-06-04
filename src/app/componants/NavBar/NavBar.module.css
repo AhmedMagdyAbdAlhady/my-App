@@ -1,0 +1,11 @@
+.navBarStylea:focus, .navBarStyle a:hover {
+    color: #ff0000b0 ;
+}
+
+.navBarStyle a:checked{
+    color: #ff0000b0;
+
+}
+.navBarStyle .active{
+    color: #ff0000b0;
+}

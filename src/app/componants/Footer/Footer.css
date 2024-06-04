@@ -1,0 +1,9 @@
+.FooterStyle h5 {
+    color: #ff0000b0 !important;
+    font-weight: bold;
+
+}
+.FooterStyle .nav-link:hover{
+    color: #ff0000b0 !important;
+
+}

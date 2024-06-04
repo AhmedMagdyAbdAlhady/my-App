@@ -202,7 +202,9 @@
     z-index: 1;
   }
 }
-
+.star>svg{
+  width:20px
+}
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
   .grid {

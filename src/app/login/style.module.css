@@ -1,0 +1,10 @@
+.logInStyle>div {
+    background-color:#605e5e14 !important;
+
+}
+.logInStyle a,  
+.logInStyle P,
+.logInStyle label
+{
+    color: black !important;
+}
