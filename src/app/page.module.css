@@ -202,8 +202,26 @@
     z-index: 1;
   }
 }
+.cardStyle {
+  box-shadow: 0 1px 20px 0px #00000026 !important;
+  border-radius: 30px;
+  transition:  1s;
+}
+.cardStyle:hover{
+box-shadow:  0px 4px 20px 9px #00000070 !important;
+border-radius: 30px;
+
+}
 .star>svg{
   width:20px
+}
+.media>svg{
+  width: 20px;
+  color: black;
+  margin: 10px;
+}
+.media>svg:hover{
+  color: #ff0000b0 !important;
 }
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
