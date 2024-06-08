@@ -213,7 +213,7 @@ border-radius: 30px;
 
 }
 .star>svg{
-  width:20px
+  width:20px !important;
 }
 .media>svg{
   width: 20px;
