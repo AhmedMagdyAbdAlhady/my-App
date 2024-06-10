@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import NavBar from "./componants/NavBar/Navbar";
-import Products from "./componants/products/products";
+import Products from "./componants/products/Products";
 import Footer from "./componants/Footer/Footer"
 import Link from "next/link";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -13,7 +13,6 @@ import { faTwitter, faFacebook,faInstagram ,faLinkedinIn} from '@fortawesome/fre
 export default function Home() {
  // Assuming you have an array of products
   const style =  styles.cardStyle;
-  const star = styles.star
   // Populate products array with your products
   const teams =[
     {
@@ -52,9 +51,8 @@ export default function Home() {
           <p className="font-italic text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
         </header>
 
-
         {/* <!-- First Row [Prosucts]--> */}
-        <Products {...{style,star}}/>
+        <Products />
       {/* Rest of your components */}
       {/* <!-- Second Row [Team]--> */}
         <h2 className="font-weight-bold mb-2 mt-2">Our Team</h2>
