@@ -42,16 +42,18 @@ const NavBar = () => {
                             <Link href="/sale" className={`nav-link ${activeLink === '/sale' ? 'active' : ''}`} onClick={() => handleSetActiveLink('/sale')}>Sale</Link>
                         </li>
                         <li className="nav-item dropdown">
-                            <Link href="#" className={`nav-link dropdown-toggle ${style.dropdown}`} role="button" data-bs-toggle="dropdown" aria-expanded="false">Man's Clothing</Link>
+                            <Link href="#" className={`nav-link dropdown-toggle ${style.dropdown}`} role="button" data-bs-toggle="dropdown" aria-expanded="false">Man&#39;s Clothing</Link>
                             <ul className="dropdown-menu">
-                                <li><Link href="#" className="dropdown-item">All Man's Clothing</Link></li>
+                                {/* <li><Link href="#" className="dropdown-item">All Man's Clothing</Link></li>
                                 <li><Link href="#" className="dropdown-item">New Arrivals</Link></li>
                                 <li><Link href="#" className="dropdown-item">Blazers & Sport Coats</Link></li>
                                 <li><Link href="#" className="dropdown-item">Coats & Jackets</Link></li>
-                                <li><Link href="#" className="dropdown-item">Jeans</Link></li>
-                                <li><Link href="#" className="dropdown-item">Pants</Link></li>
-                                <li><Link href="#" className="dropdown-item">Shirts</Link></li>
-                                <li><Link href="#" className="dropdown-item">Shorts</Link></li>
+                                <li><Link href="#" className="dropdown-item">Jeans</Link></li> */}
+                                <li><Link href="accessoires" className={`dropdown-item ${activeLink === '/accessoires' ? 'active' : ''}`} onClick={() => handleSetActiveLink('/accessoires')}>accessoires</Link></li>
+                                <li><Link href="pants" className={`dropdown-item ${activeLink === '/pants' ? 'active' : ''}`} onClick={() => handleSetActiveLink('/pants')}>Pants</Link></li>
+                                <li><Link href="shirts" className={`dropdown-item ${activeLink === '/shirts' ? 'active' : ''}`} onClick={() => handleSetActiveLink('/shirts')}>Shirts</Link></li>
+                                <li><Link href="short" className={`dropdown-item ${activeLink === '/short' ? 'active' : ''}`} onClick={() => handleSetActiveLink('/short')}>Shorts</Link></li>
+                                <li><Link href="shoes" className={`dropdown-item ${activeLink === '/shoes' ? 'active' : ''}`} onClick={() => handleSetActiveLink('/shoes')}>Shoes</Link></li>
                             </ul>
                         </li>
                         <li className="nav-item">
