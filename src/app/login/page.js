@@ -2,7 +2,10 @@
 import React, { useState } from 'react';
 import style from './style.module.css';
 import NavBar from '../componants/NavBar/Navbar';
-import Footer from '../componants/Footer/Footer'
+import Footer from '../componants/Footer/Footer';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTwitter, faFacebook,faGoogle ,faGithub} from '@fortawesome/free-brands-svg-icons';
+
 const LogIn = () => {
     const [rememberMe, setRememberMe] = useState(true); // Initialize the state for the checkbox
 
@@ -65,19 +68,19 @@ const LogIn = () => {
                                 <div className="text-center mb-3">
                                     <p>Sign in with:</p>
                                     <button type="button" data-mdb-button-init="" data-mdb-ripple-init="" className="btn btn-link btn-floating mx-1" data-mdb-button-initialized="true">
-                                        <i className="fab fa-facebook-f"></i>
+                                        <i className=""><FontAwesomeIcon icon={faFacebook} /></i>
                                     </button>
 
                                     <button type="button" data-mdb-button-init="" data-mdb-ripple-init="" className="btn btn-link btn-floating mx-1" data-mdb-button-initialized="true">
-                                        <i className="fab fa-google"></i>
+                                        <i className=""><FontAwesomeIcon icon={faGoogle} /></i>
                                     </button>
 
                                     <button type="button" data-mdb-button-init="" data-mdb-ripple-init="" className="btn btn-link btn-floating mx-1" data-mdb-button-initialized="true">
-                                        <i className="fab fa-twitter"></i>
+                                        <i className=""><FontAwesomeIcon icon={faTwitter} /></i>
                                     </button>
 
                                     <button type="button" data-mdb-button-init="" data-mdb-ripple-init="" className="btn btn-link btn-floating mx-1" data-mdb-button-initialized="true">
-                                        <i className="fab fa-github"></i>
+                                        <i className=""><FontAwesomeIcon icon={faGithub} /></i>
                                     </button>
                                 </div>
 
@@ -120,19 +123,19 @@ const LogIn = () => {
                                 <div className="text-center mb-3">
                                     <p>Sign up with:</p>
                                     <button type="button" data-mdb-button-init="" data-mdb-ripple-init="" className="btn btn-link btn-floating mx-1" data-mdb-button-initialized="true">
-                                        <i className="fab fa-facebook-f"></i>
+                                        <i className=""><FontAwesomeIcon icon={faFacebook} /></i>
                                     </button>
 
                                     <button type="button" data-mdb-button-init="" data-mdb-ripple-init="" className="btn btn-link btn-floating mx-1" data-mdb-button-initialized="true">
-                                        <i className="fab fa-google"></i>
+                                        <i className=""><FontAwesomeIcon icon={faGoogle} /></i>
                                     </button>
 
                                     <button type="button" data-mdb-button-init="" data-mdb-ripple-init="" className="btn btn-link btn-floating mx-1" data-mdb-button-initialized="true">
-                                        <i className="fab fa-twitter"></i>
+                                        <i className=""><FontAwesomeIcon icon={faTwitter} /></i>
                                     </button>
 
                                     <button type="button" data-mdb-button-init="" data-mdb-ripple-init="" className="btn btn-link btn-floating mx-1" data-mdb-button-initialized="true">
-                                        <i className="fab fa-github"></i>
+                                        <i className=""><FontAwesomeIcon icon={faGithub} /></i>
                                     </button>
                                 </div>
 

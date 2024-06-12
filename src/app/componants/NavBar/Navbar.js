@@ -27,7 +27,7 @@ const NavBar = () => {
                     />
                     Man Store
                 </Link>
-                <button className="navbar-toggler col-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <button className={`navbar-toggler col-1 ${style.buttonStyleNav}`} type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse col-md-8 d-md-flex justify-content-center" id="navbarNavDropdown">
