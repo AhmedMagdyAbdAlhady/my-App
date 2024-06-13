@@ -9,8 +9,102 @@
     border-radius: 30px;
 
 }
+.CardBodyStyle{
+    position:relative
+}
 
+.trindFlag{
+    position: absolute;
+    top: 0px;
+    left: -12px;
+    text-transform: capitalize;
+    color: #ffffff;
+    background: #ecb41c;
+    letter-spacing: 0;
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 600;
+    padding: 10px 15px;
+	display: block;
+  text-decoration: none;
+}
+.trindFlag::before{
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 0px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 12px 12px 0;
+    border-color: transparent #ecb41c transparent;
+}
+.productSale{
+    display: table;
+    position: absolute;
+    text-align: center;
+    top: 34px;
+    right: -37px;
+    z-index: 2;
+    min-width: 100px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.productSale span {
+    position: relative;
+    background: #bc8246;
+    color: #fff;
+    float: left;
+    font-size: 11px;
+    font-weight: 400;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    min-width: 50px;
+    border-radius: 0;
+    min-height: auto;
+    border: 0;
+}
+.productSale span:last-child {
+    background: #201f1f;
+}
+.productSale span::before {
+    border: 5px solid #bc8246;
+    border-color: #bc8246 transparent transparent #bc8246;
+    border-width: 9px 5px;
+    position: absolute;
+    right: -9px;
+    top: 0;
+    content: "";
+    z-index: 1;
+}
+.productSale span::after {
+    border: 5px solid #bc8246;
+    border-color: transparent transparent #bc8246 #bc8246;
+    border-width: 10px 5px;
+    position: absolute;
+    right: -9px;
+    bottom: 0;
+    content: "";
+    z-index: 1;
+}
+.productSale span:last-child::before {
+    border: 5px solid #201f1f;
+    border-color: #201f1f transparent transparent #201f1f;
+    border-width: 9px 5px;
+}
+.productSale span:last-child::after {
+    border: 5px solid #201f1f;
+    border-color: transparent transparent #201f1f #201f1f;
+    border-width: 10px 5px;
+}
 .cardimg {
-    width: 300px !important;
-    height: 230px !important;
+    width: 250px !important;
+    height: 190px !important;
 }
